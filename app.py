@@ -30,6 +30,7 @@ st.write("Metode: TF-IDF dan Latent Dirichlet Allocation (LDA)")
 # DOWNLOAD RESOURCE NLTK
 # =========================================
 nltk.download('punkt')
+nltk.download("punkt_tab")
 nltk.download('stopwords')
 
 stop_words = set(stopwords.words("indonesian"))
@@ -108,3 +109,4 @@ if uploaded_file is not None:
         st.write(", ".join(top_words))
 
     st.success("🎉 Analisis topik berhasil dilakukan!")
+
